@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "maple";
+  src: url("../font/Maplestory\ Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;  /* 글자 색 */
+  --background-start-rgb: 241, 196, 15; /* 시작 색 */
+  --background-end-rgb: 231, 76, 60;  /* 끝 색 */
+}
+html body #__next {
+  width:100%;
+}
+
+#__next {
+  font-family: 'maple';
+  height : 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  user-select: none;
+}
