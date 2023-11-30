@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Infomation() {
   return (
-    <div className="pt-20 flex flex-col items-center gap-8 px-4">
+    <div className="pt-20 flex flex-col items-center gap-8 px-32">
       <TabTitle title="Info" />
       <div className="flex justify-center text-7xl text-rose-300 pt-8">
         🎬트레일러🎬
@@ -31,13 +31,13 @@ export default function Infomation() {
         >
           <source src="/vid/story.mp4" type="video/mp4" />
         </video>
-        <div className="grid grid-rows-2 py-4 text-xl">
+        <div className="w-fit grid grid-rows-2 py-4 text-2xl">
           <div>
-            <span className="text-lime-300 text-4xl">고파고파🧪바이러스</span>
+            <span className="text-lime-300 text-5xl">고파고파🧪바이러스</span>
             <span>가 상륙해 버린 동물원…</span>
           </div>
           <div>
-            <span className="text-amber-300 text-4xl">고양이😺사육사</span>
+            <span className="text-amber-300 text-5xl">고양이😺사육사</span>
             <span>만이 배고픈 동물들을 행복하게 만들 수 있다!</span>
           </div>
         </div>
@@ -52,6 +52,9 @@ export default function Infomation() {
         <div className="text-center">🏹 공격: 마우스 좌클릭</div>
         <div className="text-center">💣 스킬: 마우스 우클릭</div>
         <div className="text-center">🥽 시야전환: Alt + 마우스</div>
+        <div className="text-center">🍱 도시락(물약): Q</div>
+        <div className="text-center">🧸 상점: Tab</div>
+        <div className="text-center">🔧 설정: ESC</div>
       </div>
       <div className="flex justify-center text-7xl text-rose-300 pt-8">
         🎨상세🎨
@@ -67,15 +70,49 @@ export default function Infomation() {
         >
           <source src="/vid/weapon-custom.mp4" type="video/mp4" />
         </video>
-        <div className="grid grid-rows-2 py-4 text-xl">
+        <div className="w-fit grid grid-rows-2 py-4 text-2xl">
           <div>
-            <span className="text-4xl text-lime-300">캐릭터🔧설정</span>
+            <span className="text-5xl text-lime-300">캐릭터🔧설정</span>
             <span>에서 원하는 공격과 스킬을 선택하세요.</span>
           </div>
           <div>
             <span>마음에 드는 모습으로 </span>
-            <span className="text-4xl text-amber-300">고양이를🎒커스텀</span>
+            <span className="text-5xl text-amber-300">고양이를🎒커스텀</span>
             <span>하세요.</span>
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex justify-start gap-8">
+        <video
+          width="50%"
+          loop="loop"
+          data-resize="true"
+          muted
+          autoPlay
+          className="rounded-xl"
+        >
+          <source src="/vid/multi-hungroggy.mp4" type="video/mp4" />
+        </video>
+        <div className="w-fit grid grid-rows-2 py-4 text-2xl">
+          <div>
+            <span className="text-5xl text-lime-300">최대👨‍👦‍👦3인</span>
+            <span>까지 멀티플레이가 가능합니다.</span>
+          </div>
+          <div>
+            <div className="pb-4">
+              <span>중요한 것은 </span>
+              <span className="text-5xl text-amber-300">
+                포기하지🍕않는🍗허기짐!!
+              </span>
+            </div>
+            <div className="text-xl">
+              <span>체력이 0이 되면 고파고파 바이러스에 감염되어 </span>
+              <span className="text-zinc-300">헝그로기 상태</span>
+              <span>에 빠집니다.</span>
+            </div>
+            <div className="text-xl">
+              다른 사육사가 주는 먹이를 통해 부활할 수 있습니다.
+            </div>
           </div>
         </div>
       </div>
@@ -88,26 +125,15 @@ export default function Infomation() {
           autoPlay
           className="rounded-xl"
         >
-          <source src="/vid/multi-hungroggy.mp4" type="video/mp4" />
+          <source src="/vid/gatcha.mp4" type="video/mp4" />
         </video>
-        <div className="grid grid-rows-2 py-4 text-xl">
+        <div className="w-fit grid grid-rows-2 py-4 text-2xl">
           <div>
-            <span className="text-4xl text-lime-300">최대👨‍👦‍👦3인</span>
-            <span>까지 멀티플레이가 가능합니다.</span>
-          </div>
-          <div>
-            <div className="pb-4">
-              <span>중요한 것은 </span>
-              <span className="text-4xl text-amber-300">
-                포기하지🍕않는🍗허기짐!!
-              </span>
+            <div className="text-5xl text-amber-300 pb-4">🎰갓챠 시스템</div>
+            <div>
+              스테이지를 클리어해서 얻은 알을 열어 마이쥬를 꾸며보세요!{" "}
             </div>
-            <div className="text-base">
-              <span>체력이 0이 되면 고파고파 바이러스에 감염되어 </span>
-              <span className="text-zinc-300">헝그로기 상태</span>
-              <span>에 빠집니다.</span>
-            </div>
-            <div className="text-base">
+            <div className="text-xl">
               다른 사육사가 주는 먹이를 통해 부활할 수 있습니다.
             </div>
           </div>

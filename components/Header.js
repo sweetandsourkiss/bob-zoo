@@ -26,15 +26,6 @@ export default function Header() {
         <div className="cursor-pointer">BOB ZOO</div>
       </Link>
       <div className="flex gap-4">
-        <Link href={"/notice"}>
-          <div
-            className={`cursor-pointer rounded-xl hover:bg-blue-400 px-2 py-1 ${
-              router.pathname === "/notice" ? "text-rose-600" : null
-            }`}
-          >
-            공지사항
-          </div>
-        </Link>
         <Link href={"/info"}>
           <div
             className={`cursor-pointer rounded-xl hover:bg-blue-400 px-2 py-1 ${
@@ -44,15 +35,15 @@ export default function Header() {
             게임정보
           </div>
         </Link>
-        {/* <Link href={"/download"}> */}
-        <div
-          className={`cursor-pointer rounded-xl hover:bg-blue-400 px-2 py-1 ${
-            router.pathname === "/download" ? "text-rose-600" : null
-          }`}
-        >
-          다운로드
-        </div>
-        {/* </Link> */}
+        <Link href={"/notice"}>
+          <div
+            className={`cursor-pointer rounded-xl hover:bg-blue-400 px-2 py-1 ${
+              router.pathname === "/notice" ? "text-rose-600" : null
+            }`}
+          >
+            공지사항
+          </div>
+        </Link>
         <Link href={"/team_mld"}>
           <div
             className={`cursor-pointer rounded-xl hover:bg-blue-400 px-2 py-1 ${
