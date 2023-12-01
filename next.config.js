@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV ==="production"
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix : isProd ? sweetandsourkiss.github.io/bob-zoo:""
+  assetPrefix : isProd ? "https://sweetandsourkiss.github.io":""
 };
 
 module.exports = nextConfig;
