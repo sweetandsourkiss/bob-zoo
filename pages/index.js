@@ -1,6 +1,6 @@
 import TabTitle from "./../components/TabTitle";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <>
       <TabTitle title="BOB ZOO" />
@@ -13,7 +13,7 @@ export default function Home(props) {
           autoPlay
           className="opacity-80"
         >
-          <source src={`${props.url}/vid/main.mp4`} type="video/mp4" />
+          <source src="/vid/main.mp4" type="video/mp4" />
         </video>
         {/* <a
           href="/download/bobzoo-setup-v1.2.exe"

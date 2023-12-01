@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 export default function Bobzoo({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} url={prefix} />
+      <Component {...pageProps} />
     </Layout>
   );
 }
